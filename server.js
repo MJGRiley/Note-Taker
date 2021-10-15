@@ -24,7 +24,7 @@ app.get('/notes', (req, res) =>
 );
 
 // Wildcard route to direct users to a 404 page
-app.get('*', (req, res) =>
+app.get('*', (req, res) => // add extra comment here
   res.sendFile(path.join(__dirname, 'public/pages/404.html'))
 );
 
